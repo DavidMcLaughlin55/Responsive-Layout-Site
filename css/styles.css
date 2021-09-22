@@ -1,0 +1,165 @@
+/* Colors */
+:root {
+    --first-color: #00BBF9;
+    --second-color:#fff;
+    --third-color: #f8bee1;
+    --fourth-color: #9B5DE5;
+    --fifth-color: #00F5D4;
+}
+
+/*-------SET-UP-------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, li, p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+hr {
+    border: 1px solid #000;
+    width: 92%;
+    margin: auto;
+}
+
+/*-------HEADER-------*/
+.main-header, .banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--first-color);
+    padding: 1em;
+    text-align: center;
+}
+
+.nav-bar {
+    margin-top: 1em;;
+}
+
+.menu-item {
+    background-color: var(--third-color);
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+}
+
+.banner .profile-pic {
+    width: 60%; 
+    margin: auto; 
+}
+
+.banner p {
+    margin: 1em 0 0;
+    padding: 0 1em 0;
+}
+
+/*-------PORTFOLIO-------*/
+#portfolio {
+    display: block;
+    width: 100%;
+    padding: 1em 0 1em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    padding: 1em 0 3em;
+    background-color: var(--second-color);
+}
+
+.site {
+    padding: 0 1em 0;
+}
+
+.site img, h2, p  {
+    padding: 0.5em 0 0.5em;
+}
+
+
+
+/*-------FOOTER-------*/
+
+#footer {
+    text-align: center;
+    background-color: var(--first-color);
+    padding-top: 1em;
+    flex-shrink: 0;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0 2em;
+    padding: 0 0 1em;
+}
+
+#contact p {
+    margin: 0 2em 0;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1em 0;
+    padding: 1em;
+}
+
+/*-------MEDIA QUERIES--------*/
+
+@media screen and (min-width:768px) {
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .site {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .main-header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin-left: 1em;
+    }
+
+    .site {
+        width: 33%;
+    }
+    
+}
