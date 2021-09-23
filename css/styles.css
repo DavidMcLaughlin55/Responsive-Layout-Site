@@ -19,8 +19,12 @@ img {
     width: 100%;
 }
 
-h1, h2, h3, li, p {
+h1, h2, h3, li {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul {
@@ -35,7 +39,7 @@ a {
 
 hr {
     border: 1px solid #000;
-    width: 92%;
+    width: 95%;
     margin: auto;
 }
 
@@ -45,12 +49,16 @@ hr {
     flex-direction: column;
     flex-wrap: wrap;
     background-color: var(--first-color);
-    padding: 1em;
     text-align: center;
 }
 
-.nav-bar {
-    margin-top: 1em;;
+.name, .nav-bar {
+    margin-top: 1em;
+    padding: 0 2em 0;
+}
+
+.nav-bar li {
+    font-size: 1.2em;
 }
 
 .menu-item {
@@ -61,14 +69,18 @@ hr {
     border-radius: 0.5em;
 }
 
-.banner .profile-pic {
-    width: 60%; 
+.profile-pic {
+    width: 40%;
     margin: auto; 
 }
 
-.banner p {
+.banner {
+    padding: 2em 0 2em;
+}
+
+.about-me {
     margin: 1em 0 0;
-    padding: 0 1em 0;
+    padding: 1em;
 }
 
 /*-------PORTFOLIO-------*/
@@ -135,6 +147,28 @@ hr {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .menu-item {
+        padding: 0.5em 2em 0.5em;
+    }
+
+    .banner {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .about-me {
+        order: 1;
+        width: 20vw;
+        margin: auto;
+        line-height: 1.5em;
+        font-size: 1.3em;
+    }
+
+    .profile-pic {
+        order: 2;
+        margin: none;
     }
 
     .wrapper {
