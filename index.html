@@ -22,12 +22,12 @@
                 <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- Bio Banner -->
+        <div class="banner">
+            <img class="profile-pic" src="images/responsive-layout-profile.png" alt="profile-pic">
+            <p class="about-me">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web-development at Treehouse and am excited to put my skills to use! </p>
+        </div>
     </header>
-<!-- Bio Banner -->
-    <section class="banner">
-        <img class="profile-pic" src="images/responsive-layout-profile.png" alt="profile-pic">
-        <p class="about-me">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web-development at Treehouse and am excited to put my skills to use! </p>
-    </section>
 <!-- Portfolio Section -->
         <section class="wrapper">
             <h2 id="portfolio">PORTFOLIO</h2>
@@ -73,7 +73,12 @@
         <hr>
         <nav class="footer-nav">
             <h3>David McLaughlin</h3>
-            <h3><a href="#header">BACK TO TOP</a></h3>
+            <h3 class="mobile-menu"><a href="#header">BACK TO TOP</a></h3>
+            <div class="hidden-menu">
+                <h3><a href="index.html">HOME</a></h3>
+                <h3><a href="#portfolio">PORTFOLIO</a></h3>
+                <h3><a href="#contact">CONTACT</a></h3>
+            </div>
         </nav>
     </footer> 
 </body>

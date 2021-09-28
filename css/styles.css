@@ -50,6 +50,7 @@ hr {
     flex-wrap: wrap;
     background-color: var(--first-color);
     text-align: center;
+    max-height: fit-content;
 }
 
 .name, .nav-bar {
@@ -87,7 +88,7 @@ hr {
 #portfolio {
     display: block;
     width: 100%;
-    padding: 1em 0 1em;
+    padding: 1.5em 0 1.5em;
 }
 
 .wrapper {
@@ -139,6 +140,17 @@ hr {
     padding: 1em;
 }
 
+.hidden-menu {
+    display:none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hidden-menu a {
+    margin: 0 1px 0;
+    padding: 1em 0.5em 1em;
+}
+
 /*-------MEDIA QUERIES--------*/
 
 @media screen and (min-width:768px) {
@@ -156,11 +168,12 @@ hr {
     .banner {
         flex-direction: row;
         justify-content: space-evenly;
+        width: 100%;
     }
 
     .about-me {
         order: 1;
-        width: 20vw;
+        width: 25%;
         margin: auto;
         line-height: 1.5em;
         font-size: 1.3em;
@@ -179,13 +192,25 @@ hr {
         width: 50%;
         flex-wrap: wrap;
     }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .hidden-menu {
+        display: flex;
+    }
 }
 
 @media screen and (min-width:1024px) {
-    .main-header{
+    .main-header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .about-me {
+        font-size: 1.5em;
     }
 
     .menu-item {
