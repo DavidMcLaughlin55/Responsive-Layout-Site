@@ -110,8 +110,6 @@ hr {
     padding: 0.5em 0 0.5em;
 }
 
-
-
 /*-------FOOTER-------*/
 
 #footer {
@@ -173,7 +171,7 @@ hr {
 
     .about-me {
         order: 1;
-        width: 25%;
+        width: 50%;
         margin: auto;
         line-height: 1.5em;
         font-size: 1.3em;
@@ -181,7 +179,6 @@ hr {
 
     .profile-pic {
         order: 2;
-        margin: none;
     }
 
     .wrapper {
